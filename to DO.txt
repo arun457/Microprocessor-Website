@@ -1,2 +1,0 @@
-update favicon
-update icons in apk, taskbar, display icon and dashboard icon
