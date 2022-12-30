@@ -4,7 +4,6 @@ LOOP: LXI H 3000h
 LDAX B
 CALL LOOP2
 STAX B
-
 INX B
 MOV A C
 CPI 0Ah
@@ -16,13 +15,10 @@ JNC SKIP ;CHANGE_TO_JC_FOR_DESCENDING_ORDER
 MOV D M
 MOV M A
 MOV A D
-
-
 SKIP: INX H
 MOV E A
 MOV A L
 CPI 0Ah
 MOV A E
 JNZ LOOP2
-RET
-</code></pre> </div> <!--Here1-->     <!--Here2--> <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab"> <h1>Coming Soon</h1> </div> </div> </div> <script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/jquery-3.5.1.slim.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/bootstrap.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/popper.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/js/prism.js"></script> </body> </html>
+RET</code></pre> </div> <!--Here1-->     <!--Here2--> <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab"> <h1>Coming Soon</h1> </div> </div> </div> <script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/jquery-3.5.1.slim.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/bootstrap.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/Bootstrap/popper.min.js"></script><script src="https://arun457.github.io/Dependencies-Server/Microprocessor-Website/js/prism.js"></script> </body> </html>
