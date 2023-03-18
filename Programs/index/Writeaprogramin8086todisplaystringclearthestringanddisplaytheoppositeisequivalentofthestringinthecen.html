@@ -21,9 +21,8 @@ main proc
     int 10h
       
     ;clearing the screen                                             
-    mov ah, 0ch
-    mov al, 20h ; light gray on black background
-    mov cx, 0 ; clear whole screen
+    mov ah, 00h
+    mov al, 03h
     int 10h
      
     ;moving the cursor to the center of screen 
