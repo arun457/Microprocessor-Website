@@ -3,7 +3,6 @@
 .data
     str1 db "This is a string 1$"
     str2 db "This is a string 2$"
-    count db 0h
 .code
     main proc 
             
@@ -11,11 +10,13 @@
         mov ds, ax    
             
         newline macro
+        push ax
         mov ah, 02h
         mov dl, 0ah
         int 21h
         mov dl, 0dh
         int 21h
+        pop ax
         endm
             
         mov ah, 09h
@@ -28,7 +29,7 @@
         lea dx, str2
         int 21h
         
- stop: mov ah, 4ch
+       mov ah, 4ch
        int 21h
        
    main endp
