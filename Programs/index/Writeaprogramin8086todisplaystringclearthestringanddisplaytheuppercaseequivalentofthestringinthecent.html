@@ -14,13 +14,8 @@ main proc
     mov ah, 09h
     mov dx, offset msg
     int 21h
-         
-    ;setting to video mode     
-    mov ah, 0
-    mov al, 13h
-    int 10h
       
-    ;clearing the screen                                             
+    ;clearing the screen and setting to video mode                                             
     mov ah, 00h
     mov al, 03h
     int 10h
