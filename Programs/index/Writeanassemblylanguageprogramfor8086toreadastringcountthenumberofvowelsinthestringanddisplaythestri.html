@@ -16,6 +16,7 @@
         
         newline macro ;newline and carriage return
             push ax
+            mov ah, 02h
             mov dl, 10
             int 21h
             mov dl, 0dh
